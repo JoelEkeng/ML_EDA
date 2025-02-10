@@ -46,31 +46,3 @@ To write an effective column descriptions:
 4. **Detected and handled outliers** – Used statistical techniques like IQR and Boxplot.
 5. **Converted data types** – Ensured correct formats for analysis.
 
-## Tracking Changes Over Time
-The best way to track dataset changes is by using **GitHub version control**:
-- **Initial Dataset Upload** – Commit raw dataset to GitHub.
-- **Data Cleaning Commits** – Record changes with messages like "Handled missing values and removed duplicates."
-- **Feature Engineering Updates** – Document transformations and new variables.
-- **Branching for Analysis** – Create separate branches for exploratory analysis.
-- **Final Versioning** – Maintain version numbers (e.g., `dataset_v1.csv`, `dataset_v2.csv`).
-
-## GitHub Integration
-To track dataset updates effectively:
-```bash
-# Clone the repository
-git clone https://github.com/JoelEkeng/ML_EDA.git
-cd your-repo
-
-# Create a new branch for cleaning
-git checkout -b data-cleaning
-
-# Add cleaned dataset
-git add dataset.csv
-
-# Commit changes
-git commit -m "Cleaned dataset: removed duplicates, handled missing values."
-
-# Push to repository
-git push origin data-cleaning
-```
-
